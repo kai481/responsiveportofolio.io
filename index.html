@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Design Lab — Creative Digital Agency</title>
+    <meta name="description" content="Aether Design Lab is a creative digital agency crafting bold brands, immersive websites, and memorable experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-bar"></div>
+            <span class="loader-text">AETHER</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+                    <circle cx="18" cy="18" r="16" stroke="currentColor" stroke-width="2"/>
+                    <path d="M18 6L26 26H10L18 6Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+                <span>Aether</span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#team">Team</a>
+                <a href="#contact" class="nav-cta">Start a Project</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Start a Project</a>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge reveal">
+                <span class="pulse-dot"></span>
+                Currently accepting new clients
+            </div>
+            <h1 class="hero-title">
+                <span class="reveal-line"><span>We design</span></span>
+                <span class="reveal-line delay-1"><span>digital products</span></span>
+                <span class="reveal-line delay-2"><span>that <em>matter</em>.</span></span>
+            </h1>
+            <p class="hero-desc reveal delay-3">Aether Design Lab is a full-service creative studio specializing in brand identity, web design, and digital strategy for forward-thinking companies.</p>
+            <div class="hero-btns reveal delay-4">
+                <a href="#work" class="btn btn-primary">
+                    <span>See Our Work</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+            <div class="hero-stats reveal delay-5">
+                <div class="stat">
+                    <span class="stat-num" data-count="120">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="8">0</span>
+                    <span class="stat-label">Years Active</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-count="45">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Awards</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-cue">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">01 — Selected Work</span>
+                <h2 class="section-title reveal delay-1">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal" data-category="branding">
+                    <div class="project-image">
+                        <div class="project-thumb" style="background: linear-gradient(135deg, #6366f1, #a855f7);"></div>
+                        <div class="project-hover">
+                            <span class="project-arrow">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-tags"><span>Branding</span><span>Web Design</span></div>
+                        <h3>Luminary — Fintech Rebrand</h3>
+                        <p>Complete visual overhaul for a next-gen banking platform serving 2M+ users.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal delay-1" data-category="web">
+                    <div class="project-image">
+                        <div class="project-thumb" style="background: linear-gradient(135deg, #ec4899, #f97316);"></div>
+                        <div class="project-hover">
+                            <span class="project-arrow">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-tags"><span>E-Commerce</span><span>UX</span></div>
+                        <h3>Solace — Wellness Marketplace</h3>
+                        <p>Luxury e-commerce experience with 40% conversion uplift post-launch.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal delay-2" data-category="app">
+                    <div class="project-image">
+                        <div class="project-thumb" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);"></div>
+                        <div class="project-hover">
+                            <span class="project-arrow">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-tags"><span>App Design</span><span>Strategy</span></div>
+                        <h3>Cirrus — Cloud SaaS Dashboard</h3>
+                        <p>Data-rich analytics dashboard designed for clarity and speed.</p>
+                    </div>
+                </article>
+                <article class="project-card reveal delay-3" data-category="branding">
+                    <div class="project-image">
+                        <div class="project-thumb" style="background: linear-gradient(135deg, #10b981, #6366f1);"></div>
+                        <div class="project-hover">
+                            <span class="project-arrow">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <div class="project-tags"><span>Identity</span><span>Print</span></div>
+                        <h3>Verdure — Sustainable Fashion Brand</h3>
+                        <p>Earthy, premium brand identity for an ethical fashion label.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-left">
+                    <span class="section-tag reveal">02 — About Us</span>
+                    <h2 class="section-title reveal delay-1">We believe great design is a catalyst for growth.</h2>
+                    <p class="reveal delay-2">Founded in 2018, Aether Design Lab has grown from a two-person operation into a 12-person studio trusted by startups and enterprises alike. We obsess over the details — from the kerning in your logo to the micro-interactions in your product.</p>
+                    <p class="reveal delay-3">Our process is collaborative, transparent, and relentlessly user-focused. Every project begins with research and ends with measurable impact.</p>
+                </div>
+                <div class="about-right reveal delay-2">
+                    <div class="about-card glass">
+                        <div class="about-card-glow"></div>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <span class="value-num">01</span>
+                                <div>
+                                    <h4>Craft First</h4>
+                                    <p>Every pixel is intentional. We don't ship "good enough."</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-num">02</span>
+                                <div>
+                                    <h4>Data-Informed</h4>
+                                    <p>Design decisions backed by research & real user feedback.</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-num">03</span>
+                                <div>
+                                    <h4>Transparent</h4>
+                                    <p>No black boxes. Full visibility from kickoff to launch.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">03 — Services</span>
+                <h2 class="section-title reveal delay-1">What we do best.</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>Web Design & Development</h3>
+                    <p>Responsive, performant websites built with modern standards. From portfolios to full-scale platforms.</p>
+                    <ul class="service-list">
+                        <li>Custom Websites</li><li>CMS Integration</li><li>Performance Audits</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 3c2 3.5 3 7 3 9s-1 5.5-3 9M12 3c-2 3.5-3 7-3 9s1 5.5 3 9M3 12h18"/></svg>
+                    </div>
+                    <h3>Brand Identity</h3>
+                    <p>Logos, typography systems, color palettes, and comprehensive brand guidelines that stand out.</p>
+                    <ul class="service-list">
+                        <li>Logo Design</li><li>Brand Strategy</li><li>Style Guides</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/></svg>
+                    </div>
+                    <h3>Product / UI Design</h3>
+                    <p>User-centered app interfaces — from wireframes through high-fidelity prototypes to handoff.</p>
+                    <ul class="service-list">
+                        <li>UX Research</li><li>Prototyping</li><li>Design Systems</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Digital Strategy</h3>
+                    <p>Go-to-market plans, content strategy, and growth frameworks to amplify your digital presence.</p>
+                    <ul class="service-list">
+                        <li>Market Analysis</li><li>Content Strategy</li><li>Growth Ops</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal">04 — Team</span>
+                <h2 class="section-title reveal delay-1">The people behind Aether.</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-member reveal">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #6366f1, #a855f7);"><span>ML</span></div>
+                    <h4>Marcus Lin</h4>
+                    <span class="member-role">Founder & Creative Director</span>
+                </div>
+                <div class="team-member reveal delay-1">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #ec4899, #f97316);"><span>SR</span></div>
+                    <h4>Sofia Reyes</h4>
+                    <span class="member-role">Lead Designer</span>
+                </div>
+                <div class="team-member reveal delay-2">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);"><span>JW</span></div>
+                    <h4>James Walker</h4>
+                    <span class="member-role">Senior Developer</span>
+                </div>
+                <div class="team-member reveal delay-3">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #10b981, #6366f1);"><span>AP</span></div>
+                    <h4>Aisha Patel</h4>
+                    <span class="member-role">UX Researcher</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span>Let's Collaborate</span><span>★</span>
+            <span>Let's Collaborate</span><span>★</span>
+            <span>Let's Collaborate</span><span>★</span>
+            <span>Let's Collaborate</span><span>★</span>
+            <span>Let's Collaborate</span><span>★</span>
+            <span>Let's Collaborate</span><span>★</span>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact section-dark">
+        <div class="container">
+            <div class="contact-inner">
+                <span class="section-tag reveal">05 — Contact</span>
+                <h2 class="contact-title reveal delay-1">
+                    <span>Ready to elevate</span>
+                    <span>your brand? <em>Let's talk.</em></span>
+                </h2>
+                <div class="contact-links reveal delay-2">
+                    <a href="mailto:hello@aetherlab.io" class="contact-row">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">hello@aetherlab.io</span>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#" class="contact-row">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">@aetherdesignlab</span>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                    <a href="#" class="contact-row">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/company/aether</span>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Aether Design Lab. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
